@@ -73,7 +73,33 @@
                 <p class="pt-3 fs-4 fw-normal text-light col-4">ennyWise</p>
             </div>
             <div class="p-2 pt-4 col-4 text-end">
-                <button type="button" class="btn btn-primary btn-sm rounded-4">Help?</button>
+                <button type="button" class="btn btn-primary btn-sm rounded-4" data-bs-toggle="modal" data-bs-target="#helpModal">Help?</button>
+                
+                <!-- Help Modal -->
+                <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="helpModalLabel">PennyWise App Help</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Add your help content here -->
+                                <p>Welcome to PennyWise App! If you need assistance, please refer to the following information:</p>
+                                <ul>
+                                    <li>How to add transactions?</li>
+                                    <li>Viewing your financial summary</li>
+                                    <li>Setting and tracking budget goals</li>
+                                    <!-- Add more help topics as needed -->
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <!-- You can add additional buttons or links here if needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> 
     </header>
